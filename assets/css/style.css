@@ -1,0 +1,29 @@
+
+body{
+    background-color: aquamarine;
+}
+img {
+    height: 175px; width: 175px 
+}
+h1 {
+    font-size: 50px; background-color: black; color:ivory; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 5px blueviolet solid;
+}
+h2 {
+     background-color: olivedrab;
+}
+.bluebox{
+    background-color: blue; border: 5px blueviolet solid; width: 325px; padding: 20px; float:right;
+}
+.redbox{
+    background-color: red;border: 5px orange solid;
+}
+.purplebox{
+    background-color: purple; font-size: 40px;border: 5px brown solid;
+}
+.pinkbox{
+    background-color: magenta; font-size: 100px; border: 5px lavender solid; padding: 20px; width: 300px; height: 150px; text-align: center
+}
+#result, #wins, #losses {
+    font-size:35px;
+}
