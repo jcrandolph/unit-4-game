@@ -26,19 +26,19 @@ function randomValue() {
     let crystal4Value = [Math.floor(Math.random() * (12) + 1)];
     console.log(crystal1Value, crystal2Value, crystal3Value, crystal4Value);
 }
-
+//crystal click functions
 $("#crystal1").on("click", function () {
     crystal1Value = parseInt(crystal1Value);
     totalScore = parseInt(totalScore);
     (totalScore = totalScore + crystal1Value);
     $("#totalScore").text(totalScore);
     console.log(totalScore);
-    if (randomNumber === totalScore) {
+    if (randomNumber == totalScore) {
         wins++;
         $("#Wins").text(wins);
         genRandomNumber();
         randomValue();
-        totalScore = 0;
+        totalScore == 0;
         $("#result").text("You Win!")
     }
     else if (randomNumber < totalScore) {
@@ -46,7 +46,7 @@ $("#crystal1").on("click", function () {
         $("#Losses").text(losses);
         genRandomNumber();
         randomValue();
-        totalScore = 0;
+        totalScore == 0;
         $("#result").text("You Lose!")
     }
 })
@@ -56,12 +56,12 @@ $("#crystal1").on("click", function () {
         (totalScore = totalScore + crystal2Value);
         $("#totalScore").text(totalScore);
         console.log(totalScore);
-        if (randomNumber === totalScore) {
+        if (randomNumber == totalScore) {
             wins++;
             $("#Wins").text(wins);
             genRandomNumber();
             randomValue();
-            totalScore = 0;
+            totalScore == 0;
             $("#result").text("You Win!")
         }
         else if (randomNumber < totalScore) {
@@ -69,7 +69,7 @@ $("#crystal1").on("click", function () {
             $("#Losses").text(losses);
             genRandomNumber();
             randomValue();
-            totalScore = 0;
+            totalScore == 0;
             $("#result").text("You Lose!")
         }
     })
@@ -84,7 +84,7 @@ $("#crystal1").on("click", function () {
                 $("#Wins").text(wins);
                 genRandomNumber();
                 randomValue();
-                totalScore = 0;
+                totalScore == 0;
                 $("#result").text("You Win!");
             }
             else if (randomNumber < totalScore) {
@@ -92,7 +92,7 @@ $("#crystal1").on("click", function () {
                 $("#Losses").text(losses);
                 genRandomNumber();
                 randomValue();
-                totalScore = 0;
+                totalScore == 0;
                 $("#result").text("You Lose!");
             }
         })
@@ -103,12 +103,12 @@ $("#crystal1").on("click", function () {
                 $("#totalScore").text(totalScore);
                 console.log(totalScore);
 
-                if (randomNumber === totalScore) {
+                if (randomNumber == totalScore) {
                     wins++;
                     $("#Wins").text(wins);
                     genRandomNumber();
                     randomValue();
-                    totalScore = 0;
+                    totalScore == 0;
                     $("#result").text("You Win!");
                 }
                 else if (randomNumber < totalScore) {
@@ -116,8 +116,9 @@ $("#crystal1").on("click", function () {
                     $("#Losses").text(losses);
                     genRandomNumber();
                     randomValue();
-                    totalScore = 0;
+                    totalScore == 0;
                     $("#result").text("You Lose!")
                                 }
-                $("#randomNumber").text(randomNumber);
+                
             })
+            $("#randomNumber").text(randomNumber);
